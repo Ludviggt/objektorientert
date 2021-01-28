@@ -116,17 +116,17 @@ void EgenKomponertGangeTabell(){
 	for (int i = 1; i <= hoyde; ++i){
 		for (int j = 1; j <= bredde; ++j ){
 			if (bredde * hoyde < 99){
-					int verdi = i*j;
-					cout << setw(3) << verdi;
+				int verdi = i*j;
+				cout << setw(3) << verdi;
 			} 
-				else if (bredde * hoyde > 99) {
-					int verdi = i*j;
-					cout << setw(4) << verdi;
-					}
-			cout << endl;
-
+			else if (bredde * hoyde > 99) {
+				int verdi = i*j;
+				cout << setw(4) << verdi;
+			}
+		
 
 		}
+		cout << endl;
 	}
 }
 
@@ -231,26 +231,15 @@ void pythagoras(int a, int b){
 	 return saldoer; 
  }
 void printBalance(vector<int> saldoer){
-	cout << setw(7) << "Ar:"<< setw(7) << "Saldo:" << endl;
+	cout << setw(3) << "Ar:"<< setw(7) << "Saldo:" << endl;
 	for (int i = 0; i < saldoer.size(); ++i){
-		cout << setw(7) << i << setw(7) << saldoer[i] << endl;
+		cout << setw(3) << i << setw(7) << saldoer[i] << endl;
 
 
 	}
 	
 }
-	/*
-	int NOK = 0;
-	double vekslingskurs = 9.75;
-	cout << "Skriv inn ett antall NOK: ";
-	cin >> NOK;
-	if (NOK<0){
-		cout << "Antall NOK var negativt, skriv et positivt antall: " << '\n';
-		cin >> NOK;
-	}
-	double EU = NOK/vekslingskurs; 
-	cout << fixed << setprecision(2) << NOK << " kr tilsvarer " << EU << " euro" << '\n';
-	*/
+	
 
 
 // C++ programs start by executing the function main
@@ -326,27 +315,29 @@ int valg = 10;
 	}
 
 
+*/
 
 EgenKomponertGangeTabell();
 
-
+/*
 cout << discriminant(5,2,2);
 
 printRealRoots(5, 2, 2);
 
 
 solveQuadraticEquation();
-
 pythagoras(100, 100);
 
 vector<int> v = calculateBalance(10000,5,2);
 for (int i=0; i< v.size();++i){
 	cout << v[i] << " in year: " << i << '\n';
 }
-*/
+
 vector<int> saldoer = calculateBalance(10000,5,10);
 printBalance(saldoer); 
+*/
 keep_window_open();
+
 }
 
 //------------------------------------------------------------------------------
